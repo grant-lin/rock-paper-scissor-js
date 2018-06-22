@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: helvetica;
+  text-align: center;
+  line-height: 25px;
+  padding: 0px 10px;
+}
+
+h1 {
+  margin-top: 50px;
+  line-height: 45px;
+}
+
+#scoreboard {
+  margin: 0 auto;
+}
+
+#battle-field {
+  /*border: 1px solid red;*/
+  height: 220px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#battle-field img {
+  height: 50%;
+}
+
+#battle-field div {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#playerHand, #botHand {
+  float: left;
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+
+#playerWeapon, #botWeapon {
+  width: 100%;
+  height: 100px;
+}
+
+#playerScore, #botScore {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.rock {
+  background-image: url("../images/rock.svg");
+}
+
+.paper {
+  background-image: url("../images/paper.svg");
+}
+
+.scissors {
+  background-image: url("../images/scissors.svg");
+}
+
+#pick-your-weapon {
+  margin: 20px 0px;
+}
+
+#pick-your-weapon button{
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  border: none;
+}
+
+#pick-your-weapon button:focus{
+  outline: 0;
+}
+
+#pick-your-weapon button:hover{
+  background-color: #9e9e9e;
+}
+
+#pick-your-weapon button:active{
+  background-color: #ff5731;
+}
+
+#match-result {
+  font-style: italic;
+}
